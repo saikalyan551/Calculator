@@ -1,4 +1,4 @@
-#  High-Availability Calculator Web App
+#   Simple High-Availability Calculator Web App
 
 Calculator Exercise details:
 
