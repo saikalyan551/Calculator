@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../static/js/script.js"></script>
+</head>
+<body>
+    <table>
+    <tr>
+        <td>
+    <div class="calculator-box">
+        <div class="display" id="screen">
+        </div>
+        <button class="inc-space" onclick="clearScr()">AC</button>
+        <button onclick="sendNum('*0.01')">%</button>
+        <button onclick="sendNum('/')">÷</button>
+        <button onclick="sendNum('1')">1</button>
+        <button onclick="sendNum('2')">2</button>
+        <button onclick="sendNum('3')">3</button>
+        <button onclick="sendNum('*')">*</button>
+        <button onclick="sendNum('4')">4</button>
+        <button onclick="sendNum('5')">5</button>
+        <button onclick="sendNum('6')">6</button>
+        <button onclick="sendNum('-')">-</button>
+        <button onclick="sendNum('7')">7</button>
+        <button onclick="sendNum('8')">8</button>
+        <button onclick="sendNum('9')">9</button>
+        <button onclick="sendNum('+')">+</button>
+        <button onclick="sendNum('.')">.</button>
+        <button onclick="sendNum('0')">0</button>
+        <button class="inc-space" onclick="equalTo()">=</button>
+    </div>
+    </td>
+    </tr>
+</table>
+<div class="output">
+    {% for log in result %}
+    <tr>
+        <tr id="counter"> A log output of a User: {{log}} <br> </tr>
+
+    </tr>
+    {% endfor %}
+</div>
+
+
+</body>
+</html>

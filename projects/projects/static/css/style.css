@@ -1,0 +1,133 @@
+*, *::before, *::after {
+    box-sizing: helvetica;
+    font-weight: normal;
+  }
+table {
+    table-layout: unset;
+    width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #772adb, #8934eb);
+
+}
+
+.calculator-box {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 90vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(90px, auto) repeat(5, 100px);
+}
+.calculator-box > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+.calculator-box > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+.inc-space {
+    grid-column: span 2;
+}
+.display {
+
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.display .first-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
+
+.display .second-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+.output_title {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.output {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 90vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(90px, auto) repeat(5, 100px);
+
+
+}
+#screen {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
+
+.element{
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 90vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(90px, auto) repeat(5, 100px);
+}
+
+div.output {
+    counter-reset: list-number;
+  }
+
+  div.output div:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+  }
