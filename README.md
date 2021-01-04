@@ -11,3 +11,31 @@ For example, user A and user B go to your app at the same time. User A calculate
 
 Results should remain between sessions. Only show the last 10 calculations descending from most recent to oldest. The calculator only needs to implement basic arithmetic operations, although you can add other math functions if you would like to impress. But don't forget to meet the basic requirements of the exercise first!
 
+## Technologies Used
+```bash
+HTML,CSS, Javascript
+python(flask)
+AWS Route 53
+Elastic load balancer(ALB)
+Elastic cloud compute
+Autoscaling groups
+SQLITE3 Database
+```
+
+## Flow Diagram 
+
+![](images/diagram.png)
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install below requirements.
+
+```bash
+pip3 install flask
+pip3 install sqlite3
+```
+
+## How run to run the webapp
+```python
+python3 <path>/app.py
+```
