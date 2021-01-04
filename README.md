@@ -11,3 +11,9 @@ For example, user A and user B go to your app at the same time. User A calculate
 
 Results should remain between sessions. Only show the last 10 calculations descending from most recent to oldest. The calculator only needs to implement basic arithmetic operations, although you can add other math functions if you would like to impress. But don't forget to meet the basic requirements of the exercise first!
 
+
+## Flow Diagram 
+
+![](images/diagram.png)
+
+## How run to run the webapp
